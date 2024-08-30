@@ -1,0 +1,34 @@
+p {
+  text-align: center;
+  color: red;
+}
+
+#styleById {
+  text-align: center;
+  color: green;
+}
+
+.styleByClass {
+  text-align: center;
+  color: purple;
+}
+
+p.styleByElementAndClass {
+  text-align: center;
+  color: orange;
+}
+
+h1, h2 {
+  text-align: center;
+  color:aqua;
+}
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+code {
+  background-color: rgb(56, 56, 56);
+  color:rgb(0, 255, 0)
+}
