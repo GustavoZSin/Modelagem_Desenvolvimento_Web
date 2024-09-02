@@ -1,3 +1,30 @@
+* {
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+#header {
+  height: 90px; 
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#btnLogin {
+  float:right; 
+  margin:35px; 
+  font-size: 19px; 
+  color:#333; 
+  font-weight: 500;
+}
+
+img {
+  float:left; 
+  height: 50px; 
+  margin:15px
+}
+
+#content {
+  margin-top: 90px
+}
+
 /* p {
   text-align: center;
   color: red;
