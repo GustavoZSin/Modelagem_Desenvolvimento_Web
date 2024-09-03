@@ -1,61 +1,150 @@
 * {
-  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  box-sizing: border-box;
 }
 
-#header {
-  height: 90px; 
+.header {
+  height: 90px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 #btnLogin {
-  float:right; 
-  margin:35px; 
-  font-size: 19px; 
-  color:#333; 
+  float: right;
+  margin: 35px;
+  font-size: 19px;
+  color: #333;
   font-weight: 500;
 }
 
 img {
-  float:left; 
-  height: 50px; 
-  margin:15px
+  float: left;
+  height: 50px;
+  margin: 15px
 }
 
-#content {
-  margin-top: 90px
+.content {
+  margin: 0px auto;
+  padding: 24px 38px;
+  max-width: 1000px;
 }
 
-/* p {
-  text-align: center;
-  color: red;
+.tableHeader,
+.tableHeader2,
+.tableHeader3 {
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  min-height: 83px;
+  padding: 10px 16px;
+  background: radial-gradient(140.76% 131.96% at 100% 100%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
 }
 
-#styleById {
-  text-align: center;
-  color: green;
+.tableHeader {
+  background-color: rgb(109, 59, 227);
 }
 
-.styleByClass {
-  text-align: center;
-  color: purple;
+.tableHeader2 {
+  background-color: rgb(176, 56, 220);
 }
 
-p.styleByElementAndClass {
-  text-align: center;
-  color: orange;
+.tableHeader3 {
+  background-color: rgb(229, 9, 20);
 }
 
-h1, h2 {
-  text-align: center;
-  color:aqua;
+.plans {
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 0px 25px;
+  width: 100%;
+  border-radius: 12px;
+  margin:5px;
 }
 
-* {
-  text-align: center;
-  color: blue;
+.descricao {
+  display: block;
+  list-style-type: disc;
+  margin: 1em 0;
+  padding-inline-start: 40px;
 }
 
-code {
-  background-color: rgb(56, 56, 56);
-  color:rgb(0, 255, 0)
-} */
+.footer {
+  font-size: 13px;
+  font-family: Netflix Sans;
+  margin-top: 20px;
+}
+
+.stepIndicator {
+  font-size: 13px;
+  color: #333;
+}
+
+.titleBestPlan {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.listSubtitle {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.53846;
+  color: rgb(118, 118, 118);
+  border-top: 1px solid #ddd;
+}
+
+.listItem {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btnNext {
+  background-color: red;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 440px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  line-height: 1;
+  border: none;
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer2 {
+  color: #737373;
+  font-size: 1em;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footerul {
+  font-size: 13px;
+  max-width: 1000px;
+  list-style-type: none;
+  margin: 1em 0;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  margin-top: 10px;
+}
