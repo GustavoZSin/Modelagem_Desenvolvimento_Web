@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#container {
+    margin: 20px;
+}
+.caixa-texto {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Define uma largura padrão para as caixas */
+}

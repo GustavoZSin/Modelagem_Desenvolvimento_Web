@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+#dataHora {
+    font-size: 24px;
+    margin: 20px 0;
+}
