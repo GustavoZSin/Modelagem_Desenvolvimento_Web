@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="container">
+        <label id="lblJogadorAtual">Jogador atual é: <label id="displayJogadorAtual">X</label></label>
+
+        <table class="jogo">
+            <tr>
+                <td data-indice="0" class="celula"></td>
+                <td data-indice="1" class="celula"></td>
+                <td data-indice="2" class="celula"></td>
+            </tr>
+            <tr>
+                <td data-indice="3" class="celula"></td>
+                <td data-indice="4" class="celula"></td>
+                <td data-indice="5" class="celula"></td>
+            </tr>
+            <tr>
+                <td data-indice="6" class="celula"></td>
+                <td data-indice="7" class="celula"></td>
+                <td data-indice="8" class="celula"></td>
+            </tr>
+        </table>
+
+        <button class="btnRecarregar" onclick="recarregar()">Reiniciar</button>
+
+        <label id="status"></label>
+    </div>
+</body>
+</html>

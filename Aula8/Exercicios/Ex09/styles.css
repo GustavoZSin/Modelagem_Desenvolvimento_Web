@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.barra-progresso {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+    margin: 20px 0;
+}
+.progresso {
+    height: 100%;
+    width: 0;
+    background-color: #76c7c0;
+    transition: width 0.3s ease;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
