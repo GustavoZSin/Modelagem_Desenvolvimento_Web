@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <div>
+        <label>Título de Exemplo</label>
+        <button id="btnMudarTema">Mudar Tema</button>
+    </div>
+
+    <main>
+        <section>
+            <label>Pesquisar: <input type="text" id="txbPesquisarItem"></label>
+            <br><br>
+            <label>Adicionar Item: <input type="text" id="txbNovoItem"></label>
+            <button id="btnAddItem">Adicionar</button>
+            <br><br>
+            <ul id="listaItems"></ul>
+            <div>Itens na lista: <span id="contadorItems">0</span></div>
+        </section>
+    </main>
+
+    <div id="notificacao" style="display:none;"></div>
+
+    <div id="modalConfirmacao" style="display:none;">
+        <p>Tem certeza de que deseja remover este item?</p>
+        <button id="btnConfirmarRemocao">Confirmar</button>
+        <button id="btnCancelarRemocao">Cancelar</button>
+    </div>
+</body>
+</html>
