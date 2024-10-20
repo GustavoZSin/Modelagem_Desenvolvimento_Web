@@ -8,19 +8,39 @@
     <title>Pesquisa Armazenamento</title>
 </head>
 <body>
-    <label>Nome Cookie:</label>
-    <input type="text" id="txbCookieName">
+    <div>
+        <h1>localStorage</h1>
+        <form id="nameForm">
+            <h2>Preencha o formulário para continuar:</h2>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name:"name" placeholder="Digite seu nome..." required />
+            <input type="submit" id="btnEnviarLocalStorage" value="Enviar">
+        </form>
+        <div id="welcome">
+            <h2>Seja bem-vindo <span id="userName"></span></h2>
+            <button id="btnLogout">Sair</button>
+        </div>
+    </div>
 
-    <label>Valor Cookie:</label>
-    <input type="text" id="txbCookieValue">
+    <div id="cookiesContainer">
+        <h1>Cookies</h1>
+        <form id="cookieForm">
+            <label for="txbCookieName">Nome Cookie:</label>
+            <input type="text" id="txbCookieName" name:"cookieName" placeholder="Digite o nome do cookie" required />
+    
+            <label for="txbCookieValue">Valor Cookie:</label>
+            <input type="text" id="txbCookieValue" name:"cookieValue" placeholder="Digite o valor do cookie"/>
+    
+            <label for="numCookieExpirationDays">Validade Cookie:</label>
+            <input type="number" 
+                   id="numCookieExpirationDays" 
+                   name:"cookieExpirationDays" 
+                   placeholder="Digite por quantos dias o cookie será válido"/>
 
-    <label>Dias de Expiração do Cookie:</label>
-    <input type="number" id="numCookieExpirationDays">
-
-    <section>
-        <button id="btnSetCookie">Set Cookie</button>
-        <button id="btnCheckCookie">Check Cookie</button>
-        <button id="btnDeleteCookie">Delete Cookie</button>
-    </section>
+            <input type="submit" id="btnSetCookie" value="Criar Cookie">
+            <input type="submit" id="btnCheckCookie" value="Validar Cookie">
+            <input type="submit" id="btnDeleteCookie" value="Deletar Cookie">
+        </form>
+    </div>
 </body>
 </html>
