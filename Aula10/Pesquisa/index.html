@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Pesquisa Armazenamento</title>
+</head>
+
+<body>
+    <div>
+        <h1>localStorage</h1>
+        <form id="nameForm">
+            <h2>Preencha o formulário para continuar:</h2>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name:"name" placeholder="Digite seu nome..." required />
+            <input type="submit" id="btnEnviarLocalStorage" value="Enviar">
+        </form>
+        <div id="welcome">
+            <h2>Seja bem-vindo <span id="userName"></span></h2>
+            <button id="btnLogout">Sair</button>
+        </div>
+    </div>
+
+    <div id="cookiesContainer">
+        <h1>Cookies</h1>
+        <form id="cookieForm">
+            <label for="txbCookieName">Nome Cookie:</label>
+            <input type="text" id="txbCookieName" name:"cookieName" placeholder="Digite o nome do cookie" required />
+
+            <label for="txbCookieValue">Valor Cookie:</label>
+            <input type="text" id="txbCookieValue" name:"cookieValue" placeholder="Digite o valor do cookie" />
+
+            <label for="numCookieExpirationDays">Validade Cookie:</label>
+            <input type="number" id="numCookieExpirationDays" name:"cookieExpirationDays"
+                placeholder="Digite por quantos dias o cookie será válido" />
+
+            <input type="submit" id="btnSetCookie" value="Criar Cookie">
+            <input type="submit" id="btnCheckCookie" value="Validar Cookie">
+            <input type="submit" id="btnDeleteCookie" value="Deletar Cookie">
+        </form>
+    </div>
+
+    <div id="sessionStorageContainer">
+        <h1>Session Storage</h1>
+        <form id="sessionForm">
+            <label for="sessionName">Nome:</label>
+            <input type="text" id="sessionName" name="sessionName" placeholder="Digite o nome..." required />
+            <input type="submit" id="btnEnviarSessionStorage" value="Enviar">
+        </form>
+        <div id="sessionWelcome">
+            <h2>Olá, <span id="sessionUserName"></span></h2>
+            <button id="btnSessionLogout">Sair da sessão</button>
+        </div>
+    </div>
+
+    <div id="indexedDBContainer">
+        <h1>IndexedDB</h1>
+        <form id="indexedForm">
+            <label for="indexedName">Nome:</label>
+            <input type="text" id="indexedName" name="indexedName" placeholder="Digite o nome..." required />
+            <input type="submit" id="btnIndexedDB" value="Salvar no IndexedDB">
+        </form>
+        <button id="btnRetrieveIndexedDB">Recuperar Dados</button>
+        <div id="indexedDBOutput"></div>
+
+        <!-- Botão para deletar item específico -->
+        <label for="deleteId">ID para Deletar:</label>
+        <input type="number" id="deleteId" placeholder="Digite o ID para deletar" />
+        <button id="btnDeleteItem">Deletar Item</button>
+
+        <!-- Botão para limpar todos os dados -->
+        <button id="btnClearDB">Limpar Todos os Dados</button>
+    </div>
+</body>
+
+</html>
